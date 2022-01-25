@@ -1,15 +1,18 @@
 export default function FormUsuario({ value, actualizarInput, manejarSubmit }) {
   return (
-    <div>
+    <div className="container-fluid bg-degradado d-flex justify-content-center">
+
+  <div className="row min-vh-100 carta ">
+
       <form
         className="p-3"
         onSubmit={(e) => {
           manejarSubmit(e);
         }}
       >
-        <h1 className="mb-4">Ingrese los datos del trabajador</h1>
+        <h1 className="mb-4 text-white">Ingrese los datos del trabajador</h1>
         <div className="my-3">
-          <label className="form-label fw-bold">Nombre del trabajador</label>
+          <label className="form-label fw-bold ">Nombre del trabajador</label>
           <input
             type="text"
             className="form-control"
@@ -75,6 +78,9 @@ export default function FormUsuario({ value, actualizarInput, manejarSubmit }) {
           Guardar
         </button>
       </form>
+  </div>
+
+
     </div>
   );
 }

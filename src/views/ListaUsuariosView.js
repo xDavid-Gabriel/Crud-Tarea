@@ -45,10 +45,10 @@ export default function ListaUsuariosView() {
   }, []);
 
   return (
-    <div>
+    <div className="container">
       <h1>Trabajadores registrados</h1>
 
-      <table className="table">
+      <table className="table my-4">
         <thead>
           <tr>
             <th>Nombre</th>
@@ -71,7 +71,7 @@ export default function ListaUsuariosView() {
                 <td>
                   <Link
                     to={`/editarusuario/${id}`}
-                    className="btn btn-info text-white me-3"
+                    className="editar text-white me-3"
                   >
                     Editar
                   </Link>
@@ -90,9 +90,12 @@ export default function ListaUsuariosView() {
         </tbody>
       </table>
       <button className="boton ms-2 my-2">
-      <Link to="/crearusuario" className="text-decoration-none font-serif text-white">
-        Agregar trabajador
-      </Link>
+        <Link
+          to="/crearusuario"
+          className="text-decoration-none font-serif text-white"
+        >
+          Agregar trabajador
+        </Link>
       </button>
     </div>
   );

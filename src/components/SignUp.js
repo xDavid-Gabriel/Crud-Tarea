@@ -42,13 +42,13 @@ export const SignUp = () => {
     <>
       <section className="container-fluid bg-degradado">
         <div className="row align-items-center justify-content-center min-vh-100">
-          <div className="carta">
+          <div className="carta" data-aos="zoom-in">
             <div className="header">
               {error && <p className="error">{error}</p>}
               <h1 className="fs-1 login">Registrate</h1>
             </div>
             <div className="card-body">
-              <form onSubmit={handleSubmit}>
+              <form className="form-login" onSubmit={handleSubmit}>
                 <input
                   type="email"
                   placeholder="Email"
@@ -69,7 +69,7 @@ export const SignUp = () => {
               </form>
               {loading && <img src={Spinner} alt="Loading" />}
               <p className="text-white">¿Ya tienes una cuenta?</p>
-              <Link to="/login" className="text-decoration-none">
+              <Link to="/login" className="text-decoration-none registro">
                 Login
               </Link>
             </div>
