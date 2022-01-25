@@ -1,0 +1,166 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Yeseva One", cursive;
+  font-weight: 400 !important;
+  margin-bottom: 0;
+}
+
+p {
+  margin-bottom: 0 !important;
+}
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+}
+.font-serif {
+  font-family: "Yeseva One", cursive;
+  font-weight: 400 !important;
+
+  margin-bottom: 0;
+}
+.font-body {
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+}
+/* body {
+  background-color: #aee6e6;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+/*botones*/
+.boton {
+  border: 0;
+  color: white;
+  padding: 16px 20px;
+
+  background: linear-gradient(90deg, #ffc255 2.89%, #fe6e0a 86.84%);
+  border-radius: 50px;
+}
+.boton:hover {
+  background: linear-gradient(90deg, #ffc255 2.89%, #eb680b 86.84%);
+  transform: scale(1.1);
+  transition: transform 0.5s;
+  color: white;
+}
+
+.bg-degradado {
+  background: linear-gradient(90deg, #ffc255 2.89%, #fe6e0a 86.84%);
+}
+.text-degradado {
+  color: #fe6e0aab;
+}
+.text-gray {
+  color: #7d7c7c;
+}
+
+/*Login*/
+.carta {
+  background-color: rgba(255, 255, 255, 0.1);
+  width: 400px !important;
+  height: 600px;
+  padding: 20px;
+  text-align: center;
+  border: solid 2px rgba(255, 255, 255, 0.2);
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(20px);
+  border-radius: 20px;
+}
+
+.header {
+  margin: 50px 0;
+  color: white;
+}
+.login {
+  text-shadow: 1px 5px 7px #9f4607;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input {
+  display: block;
+  height: 45px;
+  width: 100%;
+  margin: 15px 0;
+  border: none;
+  padding: 10px;
+  font-size: 20px;
+  border-radius: 50px;
+}
+
+input:focus {
+  border: none;
+}
+
+input[type="submit"] {
+  color: white;
+  background-color: #fe6e0a;
+
+  margin: 30px 0;
+  cursor: pointer;
+  width: 100px;
+}
+
+.error {
+  padding: 10px;
+  margin: 10px 0;
+  background-color: rgba(255, 0, 0, 0.658);
+  color: white;
+  font-size: bolder;
+}
+
+.user-photo {
+  height: 150px;
+}
+
+.logout-button {
+  background: linear-gradient(90deg, #ffc255 2.89%, #fe6e0a 86.84%);
+  color: white;
+  border: none;
+  padding: 10px;
+
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: "Yeseva One", cursive;
+  border-radius: 50px;
+}
+
+.logout-button:hover {
+  background-color: rgba(238, 43, 43, 0.685);
+}
+
+/*Trabajadores agregados*/
+
+.email {
+  background: #252525;
+  padding: 10px;
+  color: white;
+  border-radius: 50px;
+  font-family: "Yeseva One", cursive;
+}
+.user {
+  top: 10px;
+  right: 20px;
+  display: flex;
+  align-items: center;
+}
