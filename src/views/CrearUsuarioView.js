@@ -42,7 +42,7 @@ export default function CrearUsuarioView() {
       });
       //antes de dirigime a navigate
       // navigate("/");
-      history.push("/");
+      history.push("/home");
     } catch (error) {
       console.log(error);
     }

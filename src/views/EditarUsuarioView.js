@@ -45,7 +45,7 @@ export default function EditarUsuarioView() {
         text: "Producto Editado Exitosamente",
       });
       // navigate("/");
-      history.push("/");
+      history.push("/home");
     } catch (error) {
       console.log(error);
     }
